@@ -63,10 +63,10 @@ body {
     
 }
 
---text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Heebo", sans-serif; 
---text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Heebo", sans-serif;   
---text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Heebo", sans-serif; 
 --text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} "Heebo", sans-serif; 
+--text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Heebo", sans-serif; 
+--text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Heebo", sans-serif;   
+--text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Heebo", sans-serif; 
 --text-0: 500 ${pixelToRem(14)}/${pixelToRem(24)} "Heebo", sans-serif; 
 
 `;
