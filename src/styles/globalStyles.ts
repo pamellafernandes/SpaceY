@@ -1,9 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 function pixelToRem(...values: number[]) {
-    return values
-        .reduce((acc, current) => (acc += current / 16 + `rem `), "")
-        .trim();
+    return values.reduce((acc, current) => (acc += current / 16 + `rem `), "").trim();
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -54,31 +52,21 @@ body {
     --text: #FFF;
 
     /* FONTS */
-    --font-display: 800 ${pixelToRem(62)} "Heebo", sans-serif; 
+    --font-display: 800 ${pixelToRem(62)}/${pixelToRem(97)} "Heebo", sans-serif; 
 
-    --font-heading-1 {
-        font-weight: 700;
-        font-size: ${pixelToRem(32)};
-        line-height: ${pixelToRem(48)};
-    }
+    --font-heading-1: 700 ${pixelToRem(32)}/${pixelToRem(48)}  "Heebo", sans-serif;
+        
 
-    --font-heading-2 {
-        font-weight: 500;
-        font-size: ${pixelToRem(24)};
-        line-height: ${pixelToRem(32)};
-    }
+    --font-heading-2: 500 ${pixelToRem(24)}/${pixelToRem(32)}  "Heebo", sans-serif;
 
-    --font-heading-3 {
-        font-weight: 400;
-        font-size: ${pixelToRem(20)};
-        line-height: ${pixelToRem(24)};
-    }
-
-    --text-01 {
-        font-weight: 400;
-        font-size: ${pixelToRem(20)};
-        line-height: ${pixelToRem(24)};
-    }
+    --font-heading-3: 400  ${pixelToRem(20)}/${pixelToRem(24)}"Heebo", sans-serif;
+    
 }
+
+--text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Heebo", sans-serif; 
+--text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Heebo", sans-serif;   
+--text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Heebo", sans-serif; 
+--text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} "Heebo", sans-serif; 
+--text-0: 500 ${pixelToRem(14)}/${pixelToRem(24)} "Heebo", sans-serif; 
 
 `;

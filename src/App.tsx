@@ -9,7 +9,10 @@ function App() {
         <>
             <GlobalStyles />
             <Header>
-                <h1>Hello World</h1>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                nostrum molestiae asperiores nam eum, qui tempora quis in fuga
+                vel sint nemo neque reiciendis explicabo architecto ad adipisci,
+                blanditiis sequi.
             </Header>
 
             <Button text="Inscreva-se agora" />
