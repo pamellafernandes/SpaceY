@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+ 
 }
 
 html {
@@ -53,8 +54,7 @@ body {
     --text: #FFF;
 
     /* FONTS */
-    --font-display: 400 20px 'Roboto', sans-serif;
-    /* --font-display: 800 ${pixelToRem(62)} "Heebo", sans-serif;  */
+    --font-display: 800 ${pixelToRem(62)} "Heebo", sans-serif; 
 
     --font-heading-1 {
         font-weight: 700;
