@@ -1,5 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
+function pixelToRem(...values: number[]) {
+    return values
+        .reduce((acc, current) => (acc += current / 16 + `rem `), "")
+        .trim();
+}
+
 export const GlobalStyles = createGlobalStyle`
 
 * {
@@ -19,16 +25,17 @@ html {
 }
 
 
-body {
-    -webkit-font-smoothing: antialiased;
-}
 
 body {
     font-family: "Heebo", sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 
 :root {
+
+    /* COLORS */
+
     --space-light: #3D68B2;
     --space-dark: #040327;
     --space: #0B1E8A;
@@ -43,6 +50,35 @@ body {
     --earth: #0FDD86;
     --saturn: #554AD7;
     --uranus: #24FF; 
+    --text: #FFF;
 
+    /* FONTS */
+    --font-display: 400 20px 'Roboto', sans-serif;
+    /* --font-display: 800 ${pixelToRem(62)} "Heebo", sans-serif;  */
+
+    --font-heading-1 {
+        font-weight: 700;
+        font-size: ${pixelToRem(32)};
+        line-height: ${pixelToRem(48)};
+    }
+
+    --font-heading-2 {
+        font-weight: 500;
+        font-size: ${pixelToRem(24)};
+        line-height: ${pixelToRem(32)};
+    }
+
+    --font-heading-3 {
+        font-weight: 400;
+        font-size: ${pixelToRem(20)};
+        line-height: ${pixelToRem(24)};
+    }
+
+    --text-01 {
+        font-weight: 400;
+        font-size: ${pixelToRem(20)};
+        line-height: ${pixelToRem(24)};
+    }
 }
+
 `;

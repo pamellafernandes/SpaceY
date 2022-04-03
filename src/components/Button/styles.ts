@@ -12,4 +12,5 @@ export const ButtonComponent = styled.button`
     height: ${pixelToRem(62)};
     border: none;
     border-radius: ${pixelToRem(6)};
+    color: var(--text);
 `;
