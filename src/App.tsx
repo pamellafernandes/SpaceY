@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "./logo.svg";
-import { GlobalStyles } from "./styles/globalStyles";
+import { GlobalStyles } from "./styles/globalstyles";
 import { Header } from "./styles/styles";
 import Button from "./components/Button";
 
