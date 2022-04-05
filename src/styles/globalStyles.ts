@@ -13,18 +13,6 @@ export const GlobalStyles = createGlobalStyle`
  
 }
 
-html {
-    @media(max-width: 1440px){
-        /* font-size:93.75%; */
-    }
-
-    @media(min-width: 375px) {
-      /* font-size: 87.5%;*/
-    }
-}
-
-
-
 body {
     font-family: "Heebo", sans-serif;
     -webkit-font-smoothing: antialiased;
