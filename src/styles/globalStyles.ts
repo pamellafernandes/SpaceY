@@ -28,6 +28,7 @@ html {
 body {
     font-family: "Heebo", sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: var(--space);
 }
 
 

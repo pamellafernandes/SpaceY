@@ -7,15 +7,24 @@ function pixelToRem(...values: number[]) {
 export const Header = styled.div`
     display: flex;
     width: 100%;
-    background-color: var(--space);
 `;
 export const Logo = styled.image`
     width: pixelToRem(201);
     height: pixelToRem(41);
 `;
 
-export const Main = styled.div``;
+export const Main = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
 
-export const Title = styled.div``;
+export const FirstTitle = styled.p`
+    color: var(--sun);
+    font: var(--text-3);
+`;
+export const SecondTitle = styled.p`
+    color: var(--text);
+    font: var(--font-display);
+`;
 
-export const Subtitle = styled.div``;
+export const Subtitle = styled.p``;
