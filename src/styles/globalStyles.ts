@@ -28,7 +28,7 @@ html {
 body {
     font-family: "Heebo", sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--space);
+    background-color: var(--background);
 }
 
 
@@ -51,7 +51,8 @@ body {
     --saturn: #554AD7;
     --uranus: #24FF; 
     --text: #FFF;
-
+    --background: #04032C;
+ 
     /* FONTS */
     --font-display: 800 ${pixelToRem(62)}/${pixelToRem(97)} "Heebo", sans-serif; 
 
