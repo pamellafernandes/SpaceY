@@ -21,10 +21,19 @@ export const Main = styled.div`
 export const FirstTitle = styled.p`
     color: var(--sun);
     font: var(--text-3);
+    text-transform: uppercase;
 `;
+
 export const SecondTitle = styled.p`
     color: var(--text);
     font: var(--font-display);
+
+    &&:span {
+        color: var(--mars);
+    }
 `;
 
-export const Subtitle = styled.p``;
+export const Subtitle = styled.p`
+    color: var(--gray-05);
+    font: var(--font-heading-3);
+`;
