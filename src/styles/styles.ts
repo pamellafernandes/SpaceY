@@ -17,7 +17,7 @@ export const Header = styled.div`
 export const Logo = styled.image`
     width: ${pixelToRem(201)};
     height: ${pixelToRem(41)};
-    padding: ${pixelToRem(24)};
+    background-image: url("/images/logo-space-y.svg");
 `;
 
 export const Main = styled.div`

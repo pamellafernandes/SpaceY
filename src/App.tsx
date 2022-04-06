@@ -11,9 +11,7 @@ function App() {
                 <GlobalStyles />
 
                 <Header>
-                    <Logo>
-                        <img src="/images/logo-space-y.svg" alt="Logo Spacey" />
-                    </Logo>
+                    <Logo />
                 </Header>
 
                 <Main>
