@@ -22,10 +22,7 @@ export const Logo = styled.image`
 export const Main = styled.div`
     display: flex;
     flex-direction: column;
-`;
-
-export const MainContent = styled.div`
-    display: flex;
+    max-width: ${pixelToRem(815)};
 `;
 
 export const FirstTitle = styled.p`
@@ -51,7 +48,7 @@ export const Subtitle = styled.p`
 
 export const AstrounautIlustration = styled.image`
     width: ${pixelToRem(500)};
-    height: ${pixelToRem(563)};
+    height: ${pixelToRem(564)};
     position: absolute;
     background-image: url("/images/home-mars-right.svg");
     background-repeat: no-repeat;

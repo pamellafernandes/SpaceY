@@ -10,15 +10,13 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
- 
+    overflow-x: hidden;
 }
 
 body {
     font-family: "Heebo", sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: var(--background);
-    overflow-x: hidden;
-    
 }
 
 
