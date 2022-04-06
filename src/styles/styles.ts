@@ -8,7 +8,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin: ${pixelToRem(24, 112, 50)};
-    overflow-x: var(--over);
 `;
 
 export const Header = styled.div`
@@ -25,10 +24,15 @@ export const Main = styled.div`
     flex-direction: column;
 `;
 
+export const MainContent = styled.div`
+    display: flex;
+`;
+
 export const FirstTitle = styled.p`
     color: var(--sun);
     font: var(--text-3);
     text-transform: uppercase;
+    letter-spacing: ${pixelToRem(3)};
 `;
 
 export const SecondTitle = styled.p`
@@ -43,4 +47,14 @@ export const SecondTitle = styled.p`
 export const Subtitle = styled.p`
     color: var(--gray-05);
     font: var(--font-heading-3);
+`;
+
+export const AstrounautIlustration = styled.image`
+    width: ${pixelToRem(500)};
+    height: ${pixelToRem(563)};
+    position: absolute;
+    background-image: url("/images/home-mars-right.svg");
+    background-repeat: no-repeat;
+    right: ${pixelToRem(-80)};
+    top: ${pixelToRem(10)};
 `;

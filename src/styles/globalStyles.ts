@@ -17,7 +17,7 @@ body {
     font-family: "Heebo", sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: var(--background);
- 
+    overflow-x: hidden;
     
 }
 
