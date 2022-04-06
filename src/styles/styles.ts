@@ -29,9 +29,9 @@ export const Main = styled.div`
 
 export const FirstTitle = styled.p`
     color: var(--sun);
-    font: var(--text-3);
+    font: var(--text-4);
     text-transform: uppercase;
-    letter-spacing: ${pixelToRem(3)};
+    letter-spacing: ${pixelToRem(6)};
 `;
 
 export const SecondTitle = styled.p`
@@ -39,7 +39,7 @@ export const SecondTitle = styled.p`
     font: var(--font-display);
 
     span {
-        color: var(--sun);
+        color: var(--mars-dark);
     }
 `;
 
@@ -60,6 +60,6 @@ export const AstrounautIlustration = styled.image`
 `;
 
 export const DivButton = styled.div`
-    max-width: ${pixelToRem(264)};
-    max-height: ${pixelToRem(62)};
+    width: ${pixelToRem(264)};
+    padding-top: ${pixelToRem(32)};
 `;

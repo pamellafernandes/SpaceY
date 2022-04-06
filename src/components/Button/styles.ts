@@ -8,7 +8,7 @@ function pixelToRem(...values: number[]) {
 export const ButtonComponent = styled.button<ButtonProps>`
     background: var(--mars-dark);
     width: ${({ fullWidth }) => (fullWidth ? "100%" : pixelToRem(200))};
-    height: ${pixelToRem(60)};
+    height: ${pixelToRem(52)};
     border: none;
     border-radius: ${pixelToRem(6)};
     color: var(--text);
@@ -18,6 +18,6 @@ export const ButtonComponent = styled.button<ButtonProps>`
 
     &:hover {
         cursor: pointer;
-        background: var(--mars);
+        background: var(--light);
     }
 `;
