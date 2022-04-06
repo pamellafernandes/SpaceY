@@ -12,6 +12,7 @@ export const Container = styled.div`
 
 export const Header = styled.div`
     display: flex;
+    padding-bottom: ${pixelToRem(95)};
 `;
 export const Logo = styled.image`
     width: ${pixelToRem(201)};
@@ -23,6 +24,7 @@ export const Main = styled.div`
     display: flex;
     flex-direction: column;
     max-width: ${pixelToRem(815)};
+    padding-bottom: ${pixelToRem(32)};
 `;
 
 export const FirstTitle = styled.p`
@@ -44,6 +46,7 @@ export const SecondTitle = styled.p`
 export const Subtitle = styled.p`
     color: var(--gray-05);
     font: var(--font-heading-3);
+    max-width: ${pixelToRem(728)};
 `;
 
 export const AstrounautIlustration = styled.image`

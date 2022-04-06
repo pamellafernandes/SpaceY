@@ -40,7 +40,6 @@ body {
     --uranus: #24FF; 
     --text: #FFF;
     --background: #04032C;
-    --over: overflow-x: hidden;
  
     /* FONTS */
     --font-display: 800 ${pixelToRem(62)}/${pixelToRem(97)} "Heebo", sans-serif; 

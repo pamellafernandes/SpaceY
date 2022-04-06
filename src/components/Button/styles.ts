@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 function pixelToRem(...values: number[]) {
-    return values
-        .reduce((acc, current) => (acc += current / 16 + `rem `), "")
-        .trim();
+    return values.reduce((acc, current) => (acc += current / 16 + `rem `), "").trim();
 }
 
 export const ButtonComponent = styled.button`
@@ -13,4 +11,6 @@ export const ButtonComponent = styled.button`
     border: none;
     border-radius: ${pixelToRem(6)};
     color: var(--text);
+    font: var(--text-3);
+    font-weight: ${pixelToRem(700)};
 `;
