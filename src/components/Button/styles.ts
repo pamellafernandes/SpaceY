@@ -5,7 +5,7 @@ function pixelToRem(...values: number[]) {
 }
 
 export const ButtonComponent = styled.button`
-    background: var(--mars);
+    background: var(--mars-dark);
     width: ${pixelToRem(256)};
     height: ${pixelToRem(62)};
     border: none;

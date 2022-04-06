@@ -33,6 +33,7 @@ body {
     --gray-04: #898A93;
     --gray-05: #D5D5DB;
     --mars: #FF8C70;
+    --mars-dark: #CF3F1D;
     --sun: #F5D15F;
     --jupiter: #E00E34;
     --earth: #0FDD86;
