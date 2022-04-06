@@ -14,10 +14,8 @@ export const ButtonComponent = styled.button<ButtonProps>`
     color: var(--text);
     font: var(--text-3);
     font-weight: 700;
-    transition: all 0.3s ease-in-out;
 
     &:hover {
         cursor: pointer;
-        background: var(--light);
     }
 `;

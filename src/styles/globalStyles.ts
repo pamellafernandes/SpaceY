@@ -11,10 +11,11 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    font-family: "Heebo", sans-serif;
+    
     -webkit-font-smoothing: antialiased;
     background-color: var(--background);
 }
@@ -44,21 +45,21 @@ body {
     --background: #04032C;
  
     /* FONTS */
-    --font-display: 800 ${pixelToRem(62)}/${pixelToRem(97)} "Heebo", sans-serif; 
+    --font-display: 900 ${pixelToRem(62)}/${pixelToRem(97)} "Roboto", sans-serif; 
 
-    --font-heading-1: 700 ${pixelToRem(32)}/${pixelToRem(48)}  "Heebo", sans-serif;
+    --font-heading-1: 700 ${pixelToRem(32)}/${pixelToRem(48)}  "Roboto", sans-serif;
         
 
-    --font-heading-2: 500 ${pixelToRem(24)}/${pixelToRem(32)}  "Heebo", sans-serif;
+    --font-heading-2: 500 ${pixelToRem(24)}/${pixelToRem(32)}  "Roboto", sans-serif;
 
-    --font-heading-3: 400  ${pixelToRem(20)}/${pixelToRem(24)}"Heebo", sans-serif;
+    --font-heading-3: 400  ${pixelToRem(20)}/${pixelToRem(24)}"Roboto", sans-serif;
     
 }
 
---text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} "Heebo", sans-serif; 
---text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Heebo", sans-serif; 
---text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Heebo", sans-serif;   
---text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Heebo", sans-serif; 
---text-0: 500 ${pixelToRem(14)}/${pixelToRem(24)} "Heebo", sans-serif; 
+--text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} "Roboto", sans-serif; 
+--text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Roboto", sans-serif; 
+--text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Roboto", sans-serif;   
+--text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Roboto", sans-serif; 
+--text-0: 500 ${pixelToRem(14)}/${pixelToRem(24)} "Roboto", sans-serif; 
 
 `;

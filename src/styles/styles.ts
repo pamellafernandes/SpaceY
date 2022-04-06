@@ -37,9 +37,18 @@ export const FirstTitle = styled.p`
 export const SecondTitle = styled.p`
     color: var(--text);
     font: var(--font-display);
-
-    span {
-        color: var(--mars-dark);
+    & > span {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: var(--mars-dark);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            bottom: 18px;
+            right: -16px;
+        }
     }
 `;
 
