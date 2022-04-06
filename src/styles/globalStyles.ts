@@ -17,7 +17,7 @@ body {
     font-family: "Heebo", sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: var(--background);
-    overflow-x: hidden;
+ 
     
 }
 
@@ -42,6 +42,7 @@ body {
     --uranus: #24FF; 
     --text: #FFF;
     --background: #04032C;
+    --over: overflow-x: hidden;
  
     /* FONTS */
     --font-display: 800 ${pixelToRem(62)}/${pixelToRem(97)} "Heebo", sans-serif; 

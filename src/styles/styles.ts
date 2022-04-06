@@ -8,18 +8,16 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin: ${pixelToRem(24, 112, 50)};
-    width: 100vw;
-    height: 100vh;
+    overflow-x: var(--over);
 `;
 
 export const Header = styled.div`
     display: flex;
-    /* width: 100%; */
 `;
 export const Logo = styled.image`
-    width: pixelToRem(201);
-    height: pixelToRem(41);
-    padding: pixelToRem(24);
+    width: ${pixelToRem(201)};
+    height: ${pixelToRem(41)};
+    padding: ${pixelToRem(24)};
 `;
 
 export const Main = styled.div`
