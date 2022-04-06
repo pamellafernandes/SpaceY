@@ -29,7 +29,7 @@ function App() {
 
                     <SecondTitle>
                         Sua jornada para Marte começa aqui
-                        <span></span>
+                        <span />
                     </SecondTitle>
                     <Subtitle>
                         A primeira viagem para Marte estará disponivel apartir do dia 12/03/2028.
