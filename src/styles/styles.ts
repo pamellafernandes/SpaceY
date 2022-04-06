@@ -35,7 +35,7 @@ export const SecondTitle = styled.p`
     color: var(--text);
     font: var(--font-display);
 
-    &&:span {
+    span {
         color: var(--mars);
     }
 `;
