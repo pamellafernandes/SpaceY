@@ -10,6 +10,7 @@ import {
     Subtitle,
     FirstTitle,
     AstrounautIlustration,
+    DivButton,
 } from "./styles/styles";
 import Button from "./components/Button";
 
@@ -35,8 +36,9 @@ function App() {
                     </Subtitle>
                     <AstrounautIlustration />
                 </Main>
-
-                <Button text="Inscreva-se agora" />
+                <DivButton>
+                    <Button text="Inscreva-se agora" fullWidth />
+                </DivButton>
             </>
         </Container>
     );

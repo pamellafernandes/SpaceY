@@ -39,7 +39,7 @@ export const SecondTitle = styled.p`
     font: var(--font-display);
 
     span {
-        color: var(--mars);
+        color: var(--sun);
     }
 `;
 
@@ -57,4 +57,9 @@ export const AstrounautIlustration = styled.image`
     background-repeat: no-repeat;
     right: ${pixelToRem(-80)};
     top: ${pixelToRem(10)};
+`;
+
+export const DivButton = styled.div`
+    max-width: ${pixelToRem(264)};
+    max-height: ${pixelToRem(62)};
 `;
