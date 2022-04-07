@@ -3,7 +3,7 @@
 </p>
 
 <div align="center">
-  <h1>Bem vindo ao Projeto Space Y</h1>
+  <h3>Bem vindo(a) ao Projeto Space Y</h3>
 </div>
 <br>
 <br>
