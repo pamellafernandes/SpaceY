@@ -71,3 +71,5 @@ export const AstrounautIlustration = styled.image`
 export const DivButton = styled.div`
     width: ${pixelToRem(264)};
 `;
+
+export const DivIcons = styled.div``;
