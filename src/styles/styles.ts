@@ -47,7 +47,7 @@ export const SecondTitle = styled.p`
             height: 15px;
             border-radius: 50%;
             bottom: 18px;
-            right: -16px;
+            right: -30px;
         }
     }
 `;
@@ -70,5 +70,4 @@ export const AstrounautIlustration = styled.image`
 
 export const DivButton = styled.div`
     width: ${pixelToRem(264)};
-    padding-top: ${pixelToRem(32)};
 `;
