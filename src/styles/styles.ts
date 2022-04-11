@@ -1,8 +1,5 @@
 import styled from "styled-components";
-
-function pixelToRem(...values: number[]) {
-    return values.reduce((acc, current) => (acc += current / 16 + `rem `), "").trim();
-}
+import { pixelToRem } from "../utils/pixelToRem";
 
 export const Container = styled.div`
     display: flex;
@@ -59,17 +56,22 @@ export const Subtitle = styled.p`
 `;
 
 export const AstrounautIlustration = styled.image`
-    width: ${pixelToRem(500)};
-    height: ${pixelToRem(564)};
+    width: ${pixelToRem(600)};
+    height: ${pixelToRem(600)};
     position: absolute;
     background-image: url("/images/home-mars-right.svg");
     background-repeat: no-repeat;
-    right: ${pixelToRem(-80)};
+    right: ${pixelToRem(-130)};
     top: ${pixelToRem(10)};
 `;
 
 export const DivButton = styled.div`
     width: ${pixelToRem(264)};
+    padding-bottom: ${pixelToRem(135)};
 `;
-
-export const DivIcons = styled.div``;
+export const DivIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    max-width: ${pixelToRem(1440)};
+    align-items: center;
+`;

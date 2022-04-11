@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import { ButtonProps } from ".";
-
-function pixelToRem(...values: number[]) {
-    return values.reduce((acc, current) => (acc += current / 16 + `rem `), "").trim();
-}
+import { pixelToRem } from "../../utils/pixelToRem";
 
 export const ButtonComponent = styled.button<ButtonProps>`
     background: var(--mars-dark);

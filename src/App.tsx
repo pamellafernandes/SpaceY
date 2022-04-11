@@ -11,8 +11,11 @@ import {
     FirstTitle,
     AstrounautIlustration,
     DivButton,
+    DivIcons,
 } from "./styles/styles";
 import Button from "./components/Button";
+import Icon from "./components/Icon";
+import { DivIcon } from "./components/Icon/styles";
 
 function App() {
     return (
@@ -40,6 +43,24 @@ function App() {
                 <DivButton>
                     <Button text="Inscreva-se agora" fullWidth />
                 </DivButton>
+
+                <DivIcons>
+                    <Icon
+                        src="/images/icon-rocket.svg"
+                        txt="Foguetes com a mais alta tecnologia e conforto."
+                        alt="Rocket"
+                    />
+                    <Icon
+                        src="/images/icon-flag.svg"
+                        txt="Mais de 100 milhões consecutivas com sucesso."
+                        alt="Flag"
+                    />
+                    <Icon
+                        src="/images/icon-telescope.svg"
+                        txt="Experiencia única e exclusiva."
+                        alt="Telescope"
+                    />
+                </DivIcons>
             </>
         </Container>
     );
