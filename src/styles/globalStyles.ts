@@ -13,7 +13,6 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 body {
-    
     -webkit-font-smoothing: antialiased;
     background-color: var(--background);
 }
@@ -41,6 +40,7 @@ body {
     --uranus: #24FF; 
     --text: #FFF;
     --background: #04032C;
+    --background-section: linear-gradient(180deg, #040327 0%, #0D0E13 24.49%);
  
     /* FONTS */
     --font-display: 900 ${pixelToRem(62)}/${pixelToRem(97)} "Roboto", sans-serif; 
@@ -51,13 +51,13 @@ body {
     --font-heading-2: 500 ${pixelToRem(24)}/${pixelToRem(32)}  "Roboto", sans-serif;
 
     --font-heading-3: 400  ${pixelToRem(20)}/${pixelToRem(24)}"Roboto", sans-serif;
+
+    --text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} "Roboto", sans-serif; 
+    --text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Roboto", sans-serif; 
+    --text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Roboto", sans-serif;   
+    --text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Roboto", sans-serif; 
+    --text-0: 500 ${pixelToRem(14)}/${pixelToRem(24)} "Roboto", sans-serif; 
     
 }
-
---text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} "Roboto", sans-serif; 
---text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Roboto", sans-serif; 
---text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Roboto", sans-serif;   
---text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Roboto", sans-serif; 
---text-0: 500 ${pixelToRem(14)}/${pixelToRem(24)} "Roboto", sans-serif; 
 
 `;

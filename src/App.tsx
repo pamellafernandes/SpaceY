@@ -12,6 +12,11 @@ import {
     AstrounautIlustration,
     DivButton,
     DivIcons,
+    SectionAbout,
+    ImageMars,
+    DivAboutMars,
+    SecondSubTitle,
+    TextMars,
 } from "./styles/styles";
 import Button from "./components/Button";
 import Icon from "./components/Icon";
@@ -19,8 +24,8 @@ import { DivIcon } from "./components/Icon/styles";
 
 function App() {
     return (
-        <Container>
-            <>
+        <>
+            <Container>
                 <GlobalStyles />
 
                 <Header>
@@ -28,14 +33,14 @@ function App() {
                 </Header>
 
                 <Main>
-                    <FirstTitle>Finalmente é possível</FirstTitle>
+                    <FirstTitle>Finalmente é possível!</FirstTitle>
 
                     <SecondTitle>
                         Sua jornada para Marte começa aqui
                         <span />
                     </SecondTitle>
                     <Subtitle>
-                        A primeira viagem para Marte estará disponivel apartir do dia 12/03/2028.
+                        A primeira viagem para Marte estará disponivel a partir do dia 12/03/2028.
                         Inscreva-se em nossa lista de espera.
                     </Subtitle>
                     <AstrounautIlustration />
@@ -61,8 +66,36 @@ function App() {
                         alt="Telescope"
                     />
                 </DivIcons>
-            </>
-        </Container>
+            </Container>
+            <SectionAbout>
+                <ImageMars />
+                <Container>
+                    <DivAboutMars>
+                        <DivAboutMars>
+                            <FirstTitle>Por que Marte?</FirstTitle>
+
+                            <SecondSubTitle>Sobre o planeta vermelho</SecondSubTitle>
+                            <TextMars>
+                                A uma distância média de 140 milhões de milhas, Marte é um dos
+                                vizinhos habitáveis ​mais próximos da Terra. Marte está mais ou
+                                menos a metade da distância da Terra do Sol, então ainda tem luz
+                                solar decente. Está um pouco frio, mas podemos esquentar. Sua
+                                atmosfera é composta principalmente de CO2 com um pouco de
+                                nitrogênio e argônio e alguns outros oligoelementos, o que significa
+                                que podemos cultivar plantas em Marte apenas comprimindo a
+                                atmosfera.
+                            </TextMars>
+
+                            <TextMars>
+                                A gravidade em Marte é cerca de 38% da da Terra, então você seria
+                                capaz de levantar coisas pesadas e dar voltas. Além disso, o dia
+                                está notavelmente próximo ao da Terra.
+                            </TextMars>
+                        </DivAboutMars>
+                    </DivAboutMars>
+                </Container>
+            </SectionAbout>
+        </>
     );
 }
 

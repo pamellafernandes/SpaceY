@@ -24,11 +24,11 @@ export const Main = styled.div`
     padding-bottom: ${pixelToRem(32)};
 `;
 
-export const FirstTitle = styled.p`
+export const FirstTitle = styled.div`
     color: var(--sun);
     font: var(--text-4);
     text-transform: uppercase;
-    letter-spacing: ${pixelToRem(6)};
+    letter-spacing: ${pixelToRem(5)};
 `;
 
 export const SecondTitle = styled.p`
@@ -74,4 +74,31 @@ export const DivIcons = styled.div`
     justify-content: space-between;
     max-width: ${pixelToRem(1440)};
     align-items: center;
+`;
+export const SectionAbout = styled.div`
+    display: flex;
+    justify-content: center;
+    background: var(--background-section);
+    flex-direction: row;
+    background-image: url("/images/stars.jpg");
+`;
+export const ImageMars = styled.image`
+    width: ${pixelToRem(621)};
+    height: ${pixelToRem(621)};
+    background-image: url("/images/mars.svg");
+`;
+export const DivAboutMars = styled.div`
+    max-width: ${pixelToRem(603)};
+    padding-top: ${pixelToRem(138)};
+`;
+export const SecondSubTitle = styled.p`
+    font: var(--font-heading-1);
+    color: var(--text);
+    padding-top: ${pixelToRem(14)};
+`;
+
+export const TextMars = styled.p`
+    font: var(--text-1);
+    color: var(--gray-05);
+    padding-top: ${pixelToRem(26)};
 `;
