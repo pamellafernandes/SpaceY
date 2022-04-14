@@ -2,15 +2,28 @@ import styled from "styled-components";
 import { pixelToRem } from "../utils/pixelToRem";
 
 interface GalleryFlexContainerProps {
-    flex: "row" | "column";
+    flex?: "row" | "column";
     width?: string;
+    margin?: string;
+    padding?: string;
+    alignItems?: "flex-start" | "flex-end" | "center" | "stretch";
+    justifyContent?:
+        | "flex-start"
+        | "flex-end"
+        | "center"
+        | "space-between"
+        | "space-around"
+        | "space-evenly";
 }
 
 export const Container = styled.div<GalleryFlexContainerProps>`
     display: flex;
     flex-direction: ${(props) => props.flex};
     width: ${(props) => props.width};
-    margin: ${pixelToRem(24, 112, 50)};
+    margin: ${(props) => props.margin};
+    padding: ${(props) => props.padding};
+    align-items: ${(props) => props.alignItems};
+    justify-content: ${(props) => props.justifyContent};
 `;
 
 export const Header = styled.div`
@@ -85,17 +98,20 @@ export const SectionAbout = styled.div<GalleryFlexContainerProps>`
     display: flex;
     justify-content: center;
     flex-direction: ${(props) => props.flex};
-    /* flex-direction: row; */
     background-image: url("/images/stars.jpg");
+    /* REMOVER */
+    padding-bottom: ${pixelToRem(500)};
+    /* REMOVER */
 `;
 export const ImageMars = styled.image`
     width: ${pixelToRem(621)};
     height: ${pixelToRem(621)};
     background-image: url("/images/mars.svg");
 `;
-export const DivAboutMars = styled.div`
+export const DivAboutMars = styled.div<GalleryFlexContainerProps>`
     max-width: ${pixelToRem(603)};
     padding-top: ${pixelToRem(138)};
+    margin: ${(props) => props.margin};
 `;
 export const SecondSubTitle = styled.p`
     font: var(--font-heading-1);
@@ -117,4 +133,6 @@ export const GalleryContent = styled.div<GalleryFlexContainerProps>`
 export const ContainerAbout = styled.div<GalleryFlexContainerProps>`
     display: flex;
     flex-direction: ${(props) => props.flex};
+    align-items: ${(props) => props.alignItems};
+    justify-content: ${(props) => props.justifyContent};
 `;

@@ -23,11 +23,12 @@ import {
 import Button from "./components/Button";
 import Icon from "./components/Icon";
 import { DivIcon } from "./components/Icon/styles";
+import { pixelToRem } from "./utils/pixelToRem";
 
 function App() {
     return (
         <>
-            <Container flex="column">
+            <Container flex="column" margin={pixelToRem(24, 112, 50)}>
                 <GlobalStyles />
 
                 <Header>
@@ -70,8 +71,8 @@ function App() {
                 </DivIcons>
             </Container>
             <SectionAbout flex="column">
-                <ContainerAbout flex="row">
-                    <Container flex="row">
+                <Container flex="column" width="100%" justifyContent="space-between">
+                    <ContainerAbout>
                         <ImageMars />
 
                         <DivAboutMars>
@@ -95,8 +96,8 @@ function App() {
                                 está notavelmente próximo ao da Terra.
                             </TextMars>
                         </DivAboutMars>
-                    </Container>
-                </ContainerAbout>
+                    </ContainerAbout>
+                </Container>
                 <GalleryContent flex={"column"}>
                     <Logo />
                 </GalleryContent>
