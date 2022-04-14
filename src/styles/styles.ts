@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { pixelToRem } from "../utils/pixelToRem";
 
-interface GalleryFlexProps {
+interface GalleryFlexContainerProps {
     flex: "row" | "column";
+    width?: string;
 }
 
-export const Container = styled.div<GalleryFlexProps>`
+export const Container = styled.div<GalleryFlexContainerProps>`
     display: flex;
     flex-direction: ${(props) => props.flex};
+    width: ${(props) => props.width};
     margin: ${pixelToRem(24, 112, 50)};
 `;
 
@@ -79,7 +81,7 @@ export const DivIcons = styled.div`
     max-width: ${pixelToRem(1440)};
     align-items: center;
 `;
-export const SectionAbout = styled.div<GalleryFlexProps>`
+export const SectionAbout = styled.div<GalleryFlexContainerProps>`
     display: flex;
     justify-content: center;
     flex-direction: ${(props) => props.flex};
@@ -107,12 +109,12 @@ export const TextMars = styled.p`
     padding-top: ${pixelToRem(24)};
 `;
 
-export const GalleryContent = styled.div<GalleryFlexProps>`
+export const GalleryContent = styled.div<GalleryFlexContainerProps>`
     display: flex;
     flex-direction: ${(props) => props.flex};
 `;
 
-export const ContainerAbout = styled.div<GalleryFlexProps>`
+export const ContainerAbout = styled.div<GalleryFlexContainerProps>`
     display: flex;
     flex-direction: ${(props) => props.flex};
 `;

@@ -71,9 +71,9 @@ function App() {
             </Container>
             <SectionAbout flex="column">
                 <ContainerAbout flex="row">
-                    <ImageMars />
-
                     <Container flex="row">
+                        <ImageMars />
+
                         <DivAboutMars>
                             <FirstTitle>Por que Marte?</FirstTitle>
 
