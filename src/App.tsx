@@ -17,6 +17,8 @@ import {
     DivAboutMars,
     SecondSubTitle,
     TextMars,
+    GalleryContent,
+    ContainerAbout,
 } from "./styles/styles";
 import Button from "./components/Button";
 import Icon from "./components/Icon";
@@ -25,7 +27,7 @@ import { DivIcon } from "./components/Icon/styles";
 function App() {
     return (
         <>
-            <Container>
+            <Container flex="column">
                 <GlobalStyles />
 
                 <Header>
@@ -67,10 +69,11 @@ function App() {
                     />
                 </DivIcons>
             </Container>
-            <SectionAbout>
-                <ImageMars />
-                <Container>
-                    <DivAboutMars>
+            <SectionAbout flex="column">
+                <ContainerAbout flex="row">
+                    <ImageMars />
+
+                    <Container flex="row">
                         <DivAboutMars>
                             <FirstTitle>Por que Marte?</FirstTitle>
 
@@ -92,8 +95,11 @@ function App() {
                                 está notavelmente próximo ao da Terra.
                             </TextMars>
                         </DivAboutMars>
-                    </DivAboutMars>
-                </Container>
+                    </Container>
+                </ContainerAbout>
+                <GalleryContent flex={"column"}>
+                    <Logo />
+                </GalleryContent>
             </SectionAbout>
         </>
     );
