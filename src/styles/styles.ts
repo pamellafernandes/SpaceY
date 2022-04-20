@@ -99,14 +99,14 @@ export const SectionAbout = styled.div<GalleryFlexContainerProps>`
     justify-content: center;
     flex-direction: ${(props) => props.flex};
     background-image: url("/images/stars.jpg");
-    /* REMOVER */
-    padding-bottom: ${pixelToRem(500)};
-    /* REMOVER */
 `;
 export const ImageMars = styled.image`
     width: ${pixelToRem(621)};
     height: ${pixelToRem(621)};
     background-image: url("/images/mars.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 `;
 export const DivAboutMars = styled.div<GalleryFlexContainerProps>`
     max-width: ${pixelToRem(603)};
@@ -135,4 +135,7 @@ export const ContainerAbout = styled.div<GalleryFlexContainerProps>`
     flex-direction: ${(props) => props.flex};
     align-items: ${(props) => props.alignItems};
     justify-content: ${(props) => props.justifyContent};
+    width: ${(props) => props.width};
+    margin-top: ${pixelToRem(180)};
+    gap: ${pixelToRem(200)};
 `;

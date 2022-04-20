@@ -71,8 +71,8 @@ function App() {
                 </DivIcons>
             </Container>
             <SectionAbout flex="column">
-                <Container flex="column" width="100%" justifyContent="space-between">
-                    <ContainerAbout>
+                <Container width="100%">
+                    <ContainerAbout width="100%" alignItems="center" justifyContent="center">
                         <ImageMars />
 
                         <DivAboutMars>
