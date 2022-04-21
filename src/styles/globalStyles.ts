@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Roboto", sans-serif;
+    font-family: "Heebo", sans-serif;
 }
 
 body {
@@ -30,8 +30,8 @@ body {
     --gray-03: #60616F; 
     --gray-04: #898A93;
     --gray-05: #D5D5DB;
-    --mars: #E85937
-    --marslight: #FF8C70;
+    --mars: #E85937;
+    --mars-light: #FF8C70;
     --mars-dark: #CF3F1D;
     --sun: #F5D15F;
     --jupiter: #E00E34;
@@ -43,20 +43,20 @@ body {
     --background-section: linear-gradient(180deg, #040327 0%, #0D0E13 24.49%);
  
     /* FONTS */
-    --font-display: 900 ${pixelToRem(62)}/${pixelToRem(97)} "Roboto", sans-serif; 
+    --font-display: 900 ${pixelToRem(62)}/${pixelToRem(97)} "Heebo", sans-serif; 
 
-    --font-heading-1: 700 ${pixelToRem(32)}/${pixelToRem(48)}  "Roboto", sans-serif;
+    --font-heading-1: 700 ${pixelToRem(32)}/${pixelToRem(48)}  "Heebo", sans-serif;
         
 
-    --font-heading-2: 500 ${pixelToRem(24)}/${pixelToRem(32)}  "Roboto", sans-serif;
+    --font-heading-2: 500 ${pixelToRem(24)}/${pixelToRem(32)} "Heebo", sans-serif;
 
-    --font-heading-3: 400  ${pixelToRem(20)}/${pixelToRem(24)}"Roboto", sans-serif;
+    --font-heading-3: 400  ${pixelToRem(20)}/${pixelToRem(24)} "Heebo", sans-serif;
 
-    --text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} "Roboto", sans-serif; 
-    --text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Roboto", sans-serif; 
-    --text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Roboto", sans-serif;   
-    --text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Roboto", sans-serif; 
-    --text-0: 500 ${pixelToRem(14)}/${pixelToRem(24)} "Roboto", sans-serif; 
+    --text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} "Heebo", sans-serif; 
+    --text-3: 500 ${pixelToRem(18)}/${pixelToRem(24)} "Heebo", sans-serif; 
+    --text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} "Heebo", sans-serif;   
+    --text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} "Heebo", sans-serif; 
+    --text-0: 500 ${pixelToRem(14)}/${pixelToRem(24)} "Heebo", sans-serif; 
     
 }
 

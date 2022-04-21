@@ -19,6 +19,11 @@ import {
     TextMars,
     GalleryContent,
     ContainerAbout,
+    DivLogoSpaceY,
+    DivLogo,
+    TextLogo,
+    TextSubscribe,
+    Gallery,
 } from "./styles/styles";
 import Button from "./components/Button";
 import Icon from "./components/Icon";
@@ -98,8 +103,18 @@ function App() {
                         </DivAboutMars>
                     </ContainerAbout>
                 </Container>
-                <GalleryContent flex={"column"}>
-                    <Logo />
+                <GalleryContent>
+                    <DivLogo>
+                        <DivLogoSpaceY>
+                            <Logo />
+                        </DivLogoSpaceY>
+
+                        <TextLogo>
+                            O caminho para tornar a humanidade multiplanetária <span />
+                        </TextLogo>
+                        <TextSubscribe>Inscreva-se agora</TextSubscribe>
+                    </DivLogo>
+                    <Gallery />
                 </GalleryContent>
             </SectionAbout>
         </>

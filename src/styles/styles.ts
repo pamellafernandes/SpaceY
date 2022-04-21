@@ -97,8 +97,10 @@ export const DivIcons = styled.div`
 export const SectionAbout = styled.div<GalleryFlexContainerProps>`
     display: flex;
     justify-content: center;
+    background: url("/images/stars.jpg") no-repeat;
+    background-size: cover;
     flex-direction: ${(props) => props.flex};
-    background-image: url("/images/stars.jpg");
+    margin-top: ${pixelToRem(180)};
 `;
 export const ImageMars = styled.image`
     width: ${pixelToRem(621)};
@@ -110,7 +112,6 @@ export const ImageMars = styled.image`
 `;
 export const DivAboutMars = styled.div<GalleryFlexContainerProps>`
     max-width: ${pixelToRem(603)};
-    padding-top: ${pixelToRem(138)};
     margin: ${(props) => props.margin};
 `;
 export const SecondSubTitle = styled.p`
@@ -128,7 +129,21 @@ export const TextMars = styled.p`
 export const GalleryContent = styled.div<GalleryFlexContainerProps>`
     display: flex;
     flex-direction: ${(props) => props.flex};
+    margin: ${pixelToRem(150, 100, 157, 300)};
+    max-width: ${pixelToRem(500)};
 `;
+
+export const DivLogo = styled.div`
+    max-width: ${pixelToRem(350)};
+    margin-right: ${pixelToRem(30)};
+`;
+
+export const DivLogoSpaceY = styled.div`
+    display: flex;
+    padding-bottom: ${pixelToRem(13)};
+`;
+
+export const Gallery = styled.div``;
 
 export const ContainerAbout = styled.div<GalleryFlexContainerProps>`
     display: flex;
@@ -138,4 +153,33 @@ export const ContainerAbout = styled.div<GalleryFlexContainerProps>`
     width: ${(props) => props.width};
     margin-top: ${pixelToRem(180)};
     gap: ${pixelToRem(200)};
+`;
+
+export const TextLogo = styled.p`
+    font: var(--font-heading-1);
+    color: var(--text);
+    & > span {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: var(--text);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            bottom: 6px;
+            right: -10px;
+        }
+    }
+`;
+export const TextSubscribe = styled.p`
+    font: var(--text-3);
+    color: var(--mars-light);
+    padding-top: ${pixelToRem(20)};
+    transition: all ease-in-out 0.5s;
+
+    &:hover {
+        filter: brightness(0.7);
+        cursor: pointer;
+    }
 `;
