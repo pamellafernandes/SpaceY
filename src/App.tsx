@@ -1,30 +1,6 @@
 import { useState } from "react";
-import logo from "./logo.svg";
 import { GlobalStyles } from "./styles/globalstyles";
-import {
-    Container,
-    Header,
-    Logo,
-    Main,
-    SecondTitle,
-    Subtitle,
-    FirstTitle,
-    AstrounautIlustration,
-    DivButton,
-    DivIcons,
-    SectionAbout,
-    ImageMars,
-    DivAboutMars,
-    SecondSubTitle,
-    TextMars,
-    GalleryContent,
-    ContainerAbout,
-    DivLogoSpaceY,
-    DivLogo,
-    TextLogo,
-    TextSubscribe,
-    Gallery,
-} from "./styles/styles";
+import * as S from "./styles/styles";
 import Button from "./components/Button";
 import Icon from "./components/Icon";
 import { DivIcon } from "./components/Icon/styles";
@@ -33,31 +9,31 @@ import { pixelToRem } from "./utils/pixelToRem";
 function App() {
     return (
         <>
-            <Container flex="column" margin={pixelToRem(24, 112, 50)}>
+            <S.Container flex="column" margin={pixelToRem(24, 112, 50)}>
                 <GlobalStyles />
 
-                <Header>
-                    <Logo />
-                </Header>
+                <S.Header>
+                    <S.Logo />
+                </S.Header>
 
-                <Main>
-                    <FirstTitle>Finalmente é possível!</FirstTitle>
+                <S.Main>
+                    <S.FirstTitle>Finalmente é possível!</S.FirstTitle>
 
-                    <SecondTitle>
+                    <S.SecondTitle>
                         Sua jornada para Marte começa aqui
                         <span />
-                    </SecondTitle>
-                    <Subtitle>
+                    </S.SecondTitle>
+                    <S.Subtitle>
                         A primeira viagem para Marte estará disponivel a partir do dia 12/03/2028.
                         Inscreva-se em nossa lista de espera.
-                    </Subtitle>
-                    <AstrounautIlustration />
-                </Main>
-                <DivButton>
+                    </S.Subtitle>
+                    <S.AstrounautIlustration />
+                </S.Main>
+                <S.DivButton>
                     <Button text="Inscreva-se agora" fullWidth />
-                </DivButton>
+                </S.DivButton>
 
-                <DivIcons>
+                <S.DivIcons>
                     <Icon
                         src="/images/icon-rocket.svg"
                         txt="Foguetes com a mais alta tecnologia e conforto."
@@ -73,18 +49,18 @@ function App() {
                         txt="Experiencia única e exclusiva."
                         alt="Telescope"
                     />
-                </DivIcons>
-            </Container>
-            <SectionAbout flex="column">
-                <Container width="100%">
-                    <ContainerAbout width="100%" alignItems="center" justifyContent="center">
-                        <ImageMars />
+                </S.DivIcons>
+            </S.Container>
+            <S.SectionAbout flex="column">
+                <S.Container width="100%">
+                    <S.ContainerAbout width="100%" alignItems="center" justifyContent="center">
+                        <S.ImageMars />
 
-                        <DivAboutMars>
-                            <FirstTitle>Por que Marte?</FirstTitle>
+                        <S.DivAboutMars>
+                            <S.FirstTitle>Por que Marte?</S.FirstTitle>
 
-                            <SecondSubTitle>Sobre o planeta vermelho</SecondSubTitle>
-                            <TextMars>
+                            <S.SecondSubTitle>Sobre o planeta vermelho</S.SecondSubTitle>
+                            <S.TextMars>
                                 A uma distância média de 140 milhões de milhas, Marte é um dos
                                 vizinhos habitáveis ​mais próximos da Terra. Marte está mais ou
                                 menos a metade da distância da Terra do Sol, então ainda tem luz
@@ -93,30 +69,30 @@ function App() {
                                 nitrogênio e argônio e alguns outros oligoelementos, o que significa
                                 que podemos cultivar plantas em Marte apenas comprimindo a
                                 atmosfera.
-                            </TextMars>
+                            </S.TextMars>
 
-                            <TextMars>
+                            <S.TextMars>
                                 A gravidade em Marte é cerca de 38% da da Terra, então você seria
                                 capaz de levantar coisas pesadas e dar voltas. Além disso, o dia
                                 está notavelmente próximo ao da Terra.
-                            </TextMars>
-                        </DivAboutMars>
-                    </ContainerAbout>
-                </Container>
-                <GalleryContent>
-                    <DivLogo>
-                        <DivLogoSpaceY>
-                            <Logo />
-                        </DivLogoSpaceY>
+                            </S.TextMars>
+                        </S.DivAboutMars>
+                    </S.ContainerAbout>
+                </S.Container>
+                <S.GalleryContent>
+                    <S.DivLogo>
+                        <S.DivLogoSpaceY>
+                            <S.Logo />
+                        </S.DivLogoSpaceY>
 
-                        <TextLogo>
+                        <S.TextLogo>
                             O caminho para tornar a humanidade multiplanetária <span />
-                        </TextLogo>
-                        <TextSubscribe>Inscreva-se agora</TextSubscribe>
-                    </DivLogo>
-                    <Gallery />
-                </GalleryContent>
-            </SectionAbout>
+                        </S.TextLogo>
+                        <S.TextSubscribe>Inscreva-se agora</S.TextSubscribe>
+                    </S.DivLogo>
+                    <S.Gallery />
+                </S.GalleryContent>
+            </S.SectionAbout>
         </>
     );
 }
