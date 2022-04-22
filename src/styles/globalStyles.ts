@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import { device } from "./responsive";
 import { pixelToRem } from "../utils/pixelToRem";
 
 export const GlobalStyles = createGlobalStyle`

@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { GlobalStyles } from "./styles/globalstyles";
 import * as S from "./styles/styles";
+import * as A from "./components/Gallery/styles";
 import Button from "./components/Button";
+import Gallery from "./components/Gallery";
 import Icon from "./components/Icon";
 import { DivIcon } from "./components/Icon/styles";
 import { pixelToRem } from "./utils/pixelToRem";
@@ -90,7 +92,9 @@ function App() {
                         </S.TextLogo>
                         <S.TextSubscribe>Inscreva-se agora</S.TextSubscribe>
                     </S.DivLogo>
-                    <S.Gallery />
+                    <A.ArrowLeft />
+                    <Gallery />
+                    <A.ArrowRight />
                 </S.GalleryContent>
             </S.SectionAbout>
         </>

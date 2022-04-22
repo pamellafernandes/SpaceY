@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { pixelToRem } from "../utils/pixelToRem";
+import { device } from "./responsive";
+import { motion } from "framer-motion";
 
 interface GalleryFlexContainerProps {
     flex?: "row" | "column";
@@ -14,6 +16,14 @@ interface GalleryFlexContainerProps {
         | "space-between"
         | "space-around"
         | "space-evenly";
+}
+
+interface ImageGalleryProps {
+    width?: number;
+    height?: number;
+    src: string;
+    borderRadius?: number;
+    objectFit?: "cover" | "contain" | "fill" | "none" | "scale-down";
 }
 
 export const Container = styled.div<GalleryFlexContainerProps>`
@@ -40,7 +50,7 @@ export const Main = styled.div`
     display: flex;
     flex-direction: column;
     max-width: ${pixelToRem(815)};
-    padding-bottom: ${pixelToRem(32)};
+    padding-bottom: ${pixelToRem(103)};
 `;
 
 export const FirstTitle = styled.div`
@@ -75,12 +85,12 @@ export const Subtitle = styled.p`
 `;
 
 export const AstrounautIlustration = styled.image`
-    width: ${pixelToRem(600)};
+    width: ${pixelToRem(472)};
     height: ${pixelToRem(600)};
     position: absolute;
     background-image: url("/images/home-mars-right.svg");
     background-repeat: no-repeat;
-    right: ${pixelToRem(-130)};
+    right: 0;
     top: ${pixelToRem(10)};
 `;
 
@@ -93,6 +103,7 @@ export const DivIcons = styled.div`
     justify-content: space-between;
     max-width: ${pixelToRem(1440)};
     align-items: center;
+    width: 100%;
 `;
 export const SectionAbout = styled.div<GalleryFlexContainerProps>`
     display: flex;
@@ -100,7 +111,6 @@ export const SectionAbout = styled.div<GalleryFlexContainerProps>`
     background: url("/images/stars.jpg") no-repeat;
     background-size: cover;
     flex-direction: ${(props) => props.flex};
-    margin-top: ${pixelToRem(180)};
 `;
 export const ImageMars = styled.image`
     width: ${pixelToRem(621)};
@@ -110,9 +120,8 @@ export const ImageMars = styled.image`
     background-size: 100%;
     background-position: center;
 `;
-export const DivAboutMars = styled.div<GalleryFlexContainerProps>`
+export const DivAboutMars = styled(motion.div)<GalleryFlexContainerProps>`
     max-width: ${pixelToRem(603)};
-    margin: ${(props) => props.margin};
 `;
 export const SecondSubTitle = styled.p`
     font: var(--font-heading-1);
@@ -123,14 +132,13 @@ export const SecondSubTitle = styled.p`
 export const TextMars = styled.p`
     font: var(--text-1);
     color: var(--gray-05);
-    padding-top: ${pixelToRem(24)};
+    padding-top: ${pixelToRem(26)};
 `;
 
 export const GalleryContent = styled.div<GalleryFlexContainerProps>`
     display: flex;
     flex-direction: ${(props) => props.flex};
     margin: ${pixelToRem(150, 100, 157, 300)};
-    max-width: ${pixelToRem(500)};
 `;
 
 export const DivLogo = styled.div`
@@ -143,7 +151,12 @@ export const DivLogoSpaceY = styled.div`
     padding-bottom: ${pixelToRem(13)};
 `;
 
-export const Gallery = styled.div``;
+export const ImageGallery = styled.img<ImageGalleryProps>`
+    width: ${({ width }) => width && pixelToRem(width)};
+    height: ${({ height }) => height && pixelToRem(height)};
+    border-radius: ${({ borderRadius }) => borderRadius && pixelToRem(borderRadius)};
+    object-fit: ${({ objectFit }) => objectFit && objectFit};
+`;
 
 export const ContainerAbout = styled.div<GalleryFlexContainerProps>`
     display: flex;
