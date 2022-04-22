@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: "Heebo", sans-serif;
 }
 
