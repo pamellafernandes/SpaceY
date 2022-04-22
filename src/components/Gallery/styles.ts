@@ -31,7 +31,7 @@ export const GalleryContainer = styled.div`
 export const ArrowLeft = styled.div`
     display: flex;
     background: url("/images/arrow-gallery.svg") no-repeat;
-    width: ${pixelToRem(52)};
+    width: ${pixelToRem(42)};
     background-position: center;
     cursor: pointer;
     margin: ${pixelToRem(20)};
