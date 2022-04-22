@@ -5,6 +5,7 @@ import * as A from "./components/Gallery/styles";
 import Button from "./components/Button";
 import Gallery from "./components/Gallery";
 import Icon from "./components/Icon";
+import Form from "./components/Form";
 import { DivIcon } from "./components/Icon/styles";
 import { pixelToRem } from "./utils/pixelToRem";
 
