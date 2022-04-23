@@ -8,6 +8,17 @@
 <br>
 <br>
 
+
+
+# Desktop
+
+<h1 align="center">
+    <img alt="Preview Desktop" title="Preview Desktop" src=".github/Desktop.jpg" />
+</h1>
+
+<br>
+
+
 ## 🧪 Technologies
 
 This project was developed using the following technologies:
@@ -19,7 +30,3 @@ This project was developed using the following technologies:
     <br>
     <br>
     <br>
-
-## 🚧 Project in progress
-
-    Loading...
