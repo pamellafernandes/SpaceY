@@ -41,6 +41,7 @@ body {
     --text: #FFF;
     --background: #04032C;
     --background-section: linear-gradient(180deg, #040327 0%, #0D0E13 24.49%);
+    --background-form: #0E0D40;
  
     /* FONTS */
     --font-display: 900 ${pixelToRem(62)}/${pixelToRem(97)} "Heebo", sans-serif; 

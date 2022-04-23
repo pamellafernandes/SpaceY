@@ -14,11 +14,12 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-    width: ${pixelToRem(417)};
+    width: ${pixelToRem(416)};
     height: ${pixelToRem(56)};
     border: 1px solid var(--gray-05);
-    border-radius: ${pixelToRem(7)};
+    border-radius: ${pixelToRem(6)};
     font: var(--text-1);
     color: var(--text);
-    padding-left: ${pixelToRem(15)};
+    padding-left: ${pixelToRem(10)};
+    background: url(--background);
 `;

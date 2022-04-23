@@ -1,12 +1,11 @@
-import { useState } from "react";
 import { GlobalStyles } from "./styles/globalstyles";
 import * as S from "./styles/styles";
 import * as A from "./components/Gallery/styles";
+
 import Button from "./components/Button";
 import Gallery from "./components/Gallery";
 import Icon from "./components/Icon";
 import Form from "./components/Form";
-import { DivIcon } from "./components/Icon/styles";
 import { pixelToRem } from "./utils/pixelToRem";
 
 function App() {
@@ -98,6 +97,97 @@ function App() {
                     <A.ArrowRight />
                 </S.GalleryContent>
             </S.SectionAbout>
+
+            <S.SectionForm>
+                <S.ContainerForm>
+                    <S.DivForm
+                        whileInView="visible"
+                        initial="initial"
+                        viewport={{ once: true }}
+                        variants={{
+                            initial: { opacity: 0, x: -60 },
+                            visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 1.5 } },
+                        }}
+                    >
+                        <S.IconForm />
+                        <S.TitleForm>
+                            Garanta a sua vaga para a primeira viagem para Marte
+                        </S.TitleForm>
+
+                        <S.SubTitleForm>
+                            Preencha os campos abaixo e se inscreva em nossa lista de espera.
+                        </S.SubTitleForm>
+                        <Form type="text" text="Seu nome" />
+                        <Form type="email" text="E-mail" />
+                        <Form type="number" text="Telefone" />
+                        <S.DivInputCheckbox>
+                            <S.InputCheckbox type="checkbox" />
+                            <S.TextCheckbox>Concordo em receber comunicações</S.TextCheckbox>
+                        </S.DivInputCheckbox>
+                        <Button text="Garantir minha vaga" fullWidth />
+                    </S.DivForm>
+                    <S.DivRocketImage
+                        whileInView="visible"
+                        initial="initial"
+                        viewport={{ once: true }}
+                        variants={{
+                            initial: { opacity: 0, x: 0 },
+                            visible: {
+                                opacity: 1,
+                                y: -100,
+                                transition: { duration: 1, delay: 1 },
+                            },
+                        }}
+                    >
+                        <S.RocketImage>
+                            <img src="/images/rocket.svg" alt="Rocket" />
+                        </S.RocketImage>
+                    </S.DivRocketImage>
+                </S.ContainerForm>
+                <S.SectionFooter>
+                    <S.DivImageSmoke
+                        whileInView="visible"
+                        initial="initial"
+                        viewport={{ once: true }}
+                        variants={{
+                            initial: { opacity: 0, x: 0 },
+                            visible: {
+                                opacity: 1,
+                                y: -100,
+                                transition: { duration: 0.7, delay: 0.7 },
+                            },
+                        }}
+                    >
+                        <img src="/images/smoke.svg" alt="" />
+                    </S.DivImageSmoke>
+                    <S.DivFooterBottom>
+                        <S.DivLogoSpaceY>
+                            <S.Logo />
+                        </S.DivLogoSpaceY>
+                        <S.DivSocial>
+                            <img src="/images/instagram.svg" alt="" />
+                            <img src="/images/linkedin.svg" alt="" />
+                            <img src="/images/facebook.svg" alt="" />
+                        </S.DivSocial>
+                        <S.DivFooterMenu>
+                            <ul>
+                                <li>
+                                    <a href="/">Início</a>
+                                </li>
+                                <li>
+                                    <a href="/">Sobre nós</a>
+                                </li>
+                                <li>
+                                    <a href="/">Missões</a>
+                                </li>
+                                <li>
+                                    <a href="/">Contato</a>
+                                </li>
+                            </ul>
+                        </S.DivFooterMenu>
+                    </S.DivFooterBottom>
+                </S.SectionFooter>
+            </S.SectionForm>
         </>
     );
 }

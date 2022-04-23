@@ -196,3 +196,142 @@ export const TextSubscribe = styled.p`
         cursor: pointer;
     }
 `;
+
+export const SectionForm = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: url("/images/background-stars-form.jpg") no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+`;
+
+export const ContainerForm = styled.div`
+    display: flex;
+    width: 100%;
+    background: url("/images/background-stars-form.jpg") no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+`;
+
+export const DivForm = styled(motion.div)`
+    background: var(--background-form);
+    border-radius: ${pixelToRem(25)};
+    align-items: center;
+    justify-content: center;
+    padding: ${pixelToRem(39, 51, 61, 52)};
+    margin-left: ${pixelToRem(120)};
+    max-height: ${pixelToRem(850)};
+`;
+
+export const IconForm = styled.div`
+    background: url("/images/icon-ticket.svg") no-repeat;
+    width: ${pixelToRem(56)};
+    height: ${pixelToRem(56)};
+`;
+
+export const TitleForm = styled.div`
+    font: var(--font-heading-2);
+    color: var(--text);
+    max-width: ${pixelToRem(264)};
+    padding-top: ${pixelToRem(12)};
+`;
+
+export const SubTitleForm = styled.div`
+    margin-top: ${pixelToRem(12)};
+    font: var(--font-heading-3);
+    color: var(--gray-05);
+    max-width: ${pixelToRem(308)};
+`;
+
+export const DivRocketImage = styled(motion.div)`
+    display: flex;
+`;
+
+export const RocketImage = styled(motion.image)`
+    width: ${pixelToRem(980)};
+    height: ${pixelToRem(980)};
+`;
+
+export const DivInputCheckbox = styled.div`
+    display: flex;
+    padding: ${pixelToRem(24, 0, 32, 0)};
+`;
+
+export const InputCheckbox = styled.input.attrs({ type: "checkbox" })`
+    width: ${pixelToRem(24)};
+    height: ${pixelToRem(24)};
+    border: 1px solid var(--gray-05);
+    margin-right: ${pixelToRem(16)};
+    appearance: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    content: "";
+
+    &:checked {
+        background-color: var(--mars);
+    }
+`;
+
+export const TextCheckbox = styled.p`
+    font: var(--text-1);
+    color: var(--gray-05);
+`;
+
+export const SectionFooter = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const DivImageSmoke = styled(motion.div)`
+    width: 100%;
+
+    & img {
+        width: 100%;
+    }
+`;
+
+export const DivFooterBottom = styled.div`
+    display: flex;
+    justify-content: space-around;
+`;
+
+export const DivSocial = styled.div`
+    display: flex;
+    margin-left: ${pixelToRem(240)};
+    justify-content: center;
+    gap: ${pixelToRem(40)};
+
+    & img {
+        width: ${pixelToRem(30)};
+        height: ${pixelToRem(30)};
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+`;
+
+export const DivFooterMenu = styled.div`
+    gap: ${pixelToRem(53)};
+    transition: all ease-in-out 0.8s;
+
+    & ul {
+        display: flex;
+        list-style: none;
+        gap: ${pixelToRem(53)};
+    }
+
+    & a {
+        color: var(--text);
+        font: var(--text-3);
+        text-decoration: none;
+    }
+
+    & a:hover {
+        filter: brightness(0.7);
+    }
+`;
