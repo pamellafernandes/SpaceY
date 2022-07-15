@@ -17,11 +17,12 @@ export const GalleryContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
     overflow-x: hidden;
 
     img {
-        width: ${pixelToRem(200)};
-        height: ${pixelToRem(200)};
+        width: ${pixelToRem(500)};
+        height: ${pixelToRem(170)};
         border-radius: ${pixelToRem(10)};
         margin-right: ${pixelToRem(32)};
         animation: ${swiper} 25s linear infinite;

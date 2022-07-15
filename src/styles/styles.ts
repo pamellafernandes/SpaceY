@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { pixelToRem } from "../utils/pixelToRem";
-import { device } from "./responsive";
 import { motion } from "framer-motion";
 
 interface GalleryFlexContainerProps {
@@ -216,7 +215,7 @@ export const ContainerForm = styled.div`
 
 export const DivForm = styled(motion.div)`
     background: var(--background-form);
-    border-radius: ${pixelToRem(25)};
+    border-radius: ${pixelToRem(20)};
     align-items: center;
     justify-content: center;
     padding: ${pixelToRem(39, 51, 61, 52)};
@@ -234,14 +233,13 @@ export const TitleForm = styled.div`
     font: var(--font-heading-2);
     color: var(--text);
     max-width: ${pixelToRem(264)};
-    padding-top: ${pixelToRem(12)};
+    padding-top: ${pixelToRem(16)};
 `;
 
 export const SubTitleForm = styled.div`
-    margin-top: ${pixelToRem(12)};
     font: var(--font-heading-3);
     color: var(--gray-05);
-    max-width: ${pixelToRem(308)};
+    max-width: ${pixelToRem(310)};
 `;
 
 export const DivRocketImage = styled(motion.div)`
@@ -249,8 +247,8 @@ export const DivRocketImage = styled(motion.div)`
 `;
 
 export const RocketImage = styled(motion.image)`
-    width: ${pixelToRem(980)};
-    height: ${pixelToRem(980)};
+    width: ${pixelToRem(1120)};
+    height: ${pixelToRem(1120)};
 `;
 
 export const DivInputCheckbox = styled.div`

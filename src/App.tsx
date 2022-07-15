@@ -145,19 +145,7 @@ function App() {
                     </S.DivRocketImage>
                 </S.ContainerForm>
                 <S.SectionFooter>
-                    <S.DivImageSmoke
-                        whileInView="visible"
-                        initial="initial"
-                        viewport={{ once: true }}
-                        variants={{
-                            initial: { opacity: 0, x: 0 },
-                            visible: {
-                                opacity: 1,
-                                y: -100,
-                                transition: { duration: 0.7, delay: 0.7 },
-                            },
-                        }}
-                    >
+                    <S.DivImageSmoke>
                         <img src="/images/smoke.svg" alt="" />
                     </S.DivImageSmoke>
                     <S.DivFooterBottom>

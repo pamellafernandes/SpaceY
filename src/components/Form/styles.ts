@@ -22,4 +22,5 @@ export const Input = styled.input`
     color: var(--text);
     padding-left: ${pixelToRem(10)};
     background: url(--background);
+
 `;
